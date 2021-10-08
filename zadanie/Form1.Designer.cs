@@ -44,6 +44,7 @@ namespace zadanie
             this.labelImie = new System.Windows.Forms.Label();
             this.labelBadania = new System.Windows.Forms.Label();
             this.labelData = new System.Windows.Forms.Label();
+            this.buttonspdate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxImie
@@ -167,11 +168,21 @@ namespace zadanie
             this.labelData.TabIndex = 11;
             this.labelData.Text = "Data";
             // 
+            // buttonspdate
+            // 
+            this.buttonspdate.Location = new System.Drawing.Point(693, 223);
+            this.buttonspdate.Name = "buttonspdate";
+            this.buttonspdate.Size = new System.Drawing.Size(75, 23);
+            this.buttonspdate.TabIndex = 12;
+            this.buttonspdate.Text = "sprawdz za ile badanie";
+            this.buttonspdate.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonspdate);
             this.Controls.Add(this.labelData);
             this.Controls.Add(this.labelBadania);
             this.Controls.Add(this.labelImie);
@@ -209,6 +220,7 @@ namespace zadanie
         private System.Windows.Forms.Label labelImie;
         private System.Windows.Forms.Label labelBadania;
         private System.Windows.Forms.Label labelData;
+        private System.Windows.Forms.Button buttonspdate;
     }
 }
 
