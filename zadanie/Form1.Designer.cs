@@ -115,6 +115,7 @@ namespace zadanie
             this.buttonWyslij.TabIndex = 6;
             this.buttonWyslij.Text = "Wyślij  Dane";
             this.buttonWyslij.UseVisualStyleBackColor = true;
+            this.buttonWyslij.Click += new System.EventHandler(this.buttonWyslij_Click);
             // 
             // Form1
             // 
