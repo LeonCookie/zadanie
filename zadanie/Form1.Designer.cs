@@ -39,6 +39,11 @@ namespace zadanie
             this.labelDate = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.buttonWyslij = new System.Windows.Forms.Button();
+            this.buttonp = new System.Windows.Forms.Button();
+            this.buttonn = new System.Windows.Forms.Button();
+            this.labelImie = new System.Windows.Forms.Label();
+            this.labelBadania = new System.Windows.Forms.Label();
+            this.labelData = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxImie
@@ -117,11 +122,61 @@ namespace zadanie
             this.buttonWyslij.UseVisualStyleBackColor = true;
             this.buttonWyslij.Click += new System.EventHandler(this.buttonWyslij_Click);
             // 
+            // buttonp
+            // 
+            this.buttonp.Location = new System.Drawing.Point(513, 223);
+            this.buttonp.Name = "buttonp";
+            this.buttonp.Size = new System.Drawing.Size(75, 23);
+            this.buttonp.TabIndex = 7;
+            this.buttonp.Text = "poprzedni";
+            this.buttonp.UseVisualStyleBackColor = true;
+            // 
+            // buttonn
+            // 
+            this.buttonn.Location = new System.Drawing.Point(594, 223);
+            this.buttonn.Name = "buttonn";
+            this.buttonn.Size = new System.Drawing.Size(75, 23);
+            this.buttonn.TabIndex = 8;
+            this.buttonn.Text = "nastepny";
+            this.buttonn.UseVisualStyleBackColor = true;
+            // 
+            // labelImie
+            // 
+            this.labelImie.AutoSize = true;
+            this.labelImie.Location = new System.Drawing.Point(576, 107);
+            this.labelImie.Name = "labelImie";
+            this.labelImie.Size = new System.Drawing.Size(26, 13);
+            this.labelImie.TabIndex = 9;
+            this.labelImie.Text = "Imie";
+            // 
+            // labelBadania
+            // 
+            this.labelBadania.AutoSize = true;
+            this.labelBadania.Location = new System.Drawing.Point(576, 137);
+            this.labelBadania.Name = "labelBadania";
+            this.labelBadania.Size = new System.Drawing.Size(46, 13);
+            this.labelBadania.TabIndex = 10;
+            this.labelBadania.Text = "Badania";
+            // 
+            // labelData
+            // 
+            this.labelData.AutoSize = true;
+            this.labelData.Location = new System.Drawing.Point(576, 163);
+            this.labelData.Name = "labelData";
+            this.labelData.Size = new System.Drawing.Size(30, 13);
+            this.labelData.TabIndex = 11;
+            this.labelData.Text = "Data";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelData);
+            this.Controls.Add(this.labelBadania);
+            this.Controls.Add(this.labelImie);
+            this.Controls.Add(this.buttonn);
+            this.Controls.Add(this.buttonp);
             this.Controls.Add(this.buttonWyslij);
             this.Controls.Add(this.labelDate);
             this.Controls.Add(this.labelTime);
@@ -149,6 +204,11 @@ namespace zadanie
         private System.Windows.Forms.Label labelDate;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button buttonWyslij;
+        private System.Windows.Forms.Button buttonp;
+        private System.Windows.Forms.Button buttonn;
+        private System.Windows.Forms.Label labelImie;
+        private System.Windows.Forms.Label labelBadania;
+        private System.Windows.Forms.Label labelData;
     }
 }
 
