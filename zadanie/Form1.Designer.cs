@@ -38,6 +38,7 @@ namespace zadanie
             this.labelTime = new System.Windows.Forms.Label();
             this.labelDate = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.buttonWyslij = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxImie
@@ -75,15 +76,17 @@ namespace zadanie
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(40, 117);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 3;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // labelTime
             // 
             this.labelTime.AutoSize = true;
-            this.labelTime.Location = new System.Drawing.Point(525, 33);
+            this.labelTime.Location = new System.Drawing.Point(200, 33);
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(30, 13);
             this.labelTime.TabIndex = 4;
@@ -92,7 +95,7 @@ namespace zadanie
             // labelDate
             // 
             this.labelDate.AutoSize = true;
-            this.labelDate.Location = new System.Drawing.Point(525, 9);
+            this.labelDate.Location = new System.Drawing.Point(200, 9);
             this.labelDate.Name = "labelDate";
             this.labelDate.Size = new System.Drawing.Size(30, 13);
             this.labelDate.TabIndex = 5;
@@ -104,11 +107,21 @@ namespace zadanie
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // buttonWyslij
+            // 
+            this.buttonWyslij.Location = new System.Drawing.Point(40, 153);
+            this.buttonWyslij.Name = "buttonWyslij";
+            this.buttonWyslij.Size = new System.Drawing.Size(200, 23);
+            this.buttonWyslij.TabIndex = 6;
+            this.buttonWyslij.Text = "Wyślij  Dane";
+            this.buttonWyslij.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonWyslij);
             this.Controls.Add(this.labelDate);
             this.Controls.Add(this.labelTime);
             this.Controls.Add(this.dateTimePicker1);
@@ -134,6 +147,7 @@ namespace zadanie
         private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.Label labelDate;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button buttonWyslij;
     }
 }
 
