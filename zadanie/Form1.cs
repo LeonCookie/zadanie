@@ -26,14 +26,14 @@ namespace zadanie
         {
 
         }
-
+        /*
         struct pacjenci
         {
             char imie[25];
             char nBadania[50];
             int data;
         }
-
+        */
 
         private void Form1_Load(object sender, EventArgs e)
         {
