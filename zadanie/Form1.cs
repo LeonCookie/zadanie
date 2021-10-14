@@ -1,12 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace zadanie
@@ -35,11 +28,23 @@ namespace zadanie
         }
 
 
-        Queue pacjenci = new Queue();
+        struct pacjenci
+        {
+            string imie;
+            string nazwa_bad;
+            float data_bad;
+
+        }
+        // queue
+        Queue kolejka = new Queue();
+        
+            
 
 
-        
-        
+
+
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -62,8 +67,13 @@ namespace zadanie
             ldata = dateTimePicker1.Text;
             MessageBox.Show("Dane: "+lname + " " + lnBadania + " " + ldata + " Zostały dodane"); //wyswietlenie obecnych danych.
             */      //meh
+            
+           
+        }
 
-
+        private void buttontxt_Click(object sender, EventArgs e)
+        {
+            //queue simple export file = "queues.txt";
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -71,5 +81,6 @@ namespace zadanie
             // dateTimePicker.
           
         }
+
     }
 }

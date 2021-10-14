@@ -47,6 +47,7 @@ namespace zadanie
             this.buttonspdate = new System.Windows.Forms.Button();
             this.buttonusun = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.buttontxt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxImie
@@ -194,11 +195,23 @@ namespace zadanie
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // buttontxt
+            // 
+            this.buttontxt.BackColor = System.Drawing.SystemColors.GrayText;
+            this.buttontxt.Location = new System.Drawing.Point(693, 287);
+            this.buttontxt.Name = "buttontxt";
+            this.buttontxt.Size = new System.Drawing.Size(75, 32);
+            this.buttontxt.TabIndex = 14;
+            this.buttontxt.Text = "kolejka to txt";
+            this.buttontxt.UseVisualStyleBackColor = false;
+            this.buttontxt.Click += new System.EventHandler(this.buttontxt_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttontxt);
             this.Controls.Add(this.buttonusun);
             this.Controls.Add(this.buttonspdate);
             this.Controls.Add(this.labelData);
@@ -242,6 +255,7 @@ namespace zadanie
         private System.Windows.Forms.Button buttonspdate;
         private System.Windows.Forms.Button buttonusun;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.Button buttontxt;
     }
 }
 
