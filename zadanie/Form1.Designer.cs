@@ -46,6 +46,7 @@ namespace zadanie
             this.labelData = new System.Windows.Forms.Label();
             this.buttonspdate = new System.Windows.Forms.Button();
             this.buttonusun = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SuspendLayout();
             // 
             // textBoxImie
@@ -188,6 +189,11 @@ namespace zadanie
             this.buttonusun.Text = "usun";
             this.buttonusun.UseVisualStyleBackColor = false;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -209,6 +215,7 @@ namespace zadanie
             this.Controls.Add(this.textBoxNazwaBadania);
             this.Controls.Add(this.textBoxImie);
             this.Name = "Form1";
+            this.RightToLeftLayout = true;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -234,6 +241,7 @@ namespace zadanie
         private System.Windows.Forms.Label labelData;
         private System.Windows.Forms.Button buttonspdate;
         private System.Windows.Forms.Button buttonusun;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
 

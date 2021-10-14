@@ -34,6 +34,7 @@ namespace zadanie
 
         }
 
+
         Queue pacjenci = new Queue();
 
 
@@ -56,11 +57,13 @@ namespace zadanie
 
         private void buttonWyslij_Click(object sender, EventArgs e)
         {
-            lname = textBoxImie.Text;
+            /*lname = textBoxImie.Text;     
             lnBadania = textBoxNazwaBadania.Text;
             ldata = dateTimePicker1.Text;
-
             MessageBox.Show("Dane: "+lname + " " + lnBadania + " " + ldata + " Zostały dodane"); //wyswietlenie obecnych danych.
+            */      //meh
+
+
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
