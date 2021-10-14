@@ -45,6 +45,7 @@ namespace zadanie
             this.labelBadania = new System.Windows.Forms.Label();
             this.labelData = new System.Windows.Forms.Label();
             this.buttonspdate = new System.Windows.Forms.Button();
+            this.buttonusun = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxImie
@@ -127,7 +128,7 @@ namespace zadanie
             // 
             this.buttonp.Location = new System.Drawing.Point(513, 223);
             this.buttonp.Name = "buttonp";
-            this.buttonp.Size = new System.Drawing.Size(75, 23);
+            this.buttonp.Size = new System.Drawing.Size(75, 36);
             this.buttonp.TabIndex = 7;
             this.buttonp.Text = "poprzedni";
             this.buttonp.UseVisualStyleBackColor = true;
@@ -136,7 +137,7 @@ namespace zadanie
             // 
             this.buttonn.Location = new System.Drawing.Point(594, 223);
             this.buttonn.Name = "buttonn";
-            this.buttonn.Size = new System.Drawing.Size(75, 23);
+            this.buttonn.Size = new System.Drawing.Size(75, 36);
             this.buttonn.TabIndex = 8;
             this.buttonn.Text = "nastepny";
             this.buttonn.UseVisualStyleBackColor = true;
@@ -172,16 +173,27 @@ namespace zadanie
             // 
             this.buttonspdate.Location = new System.Drawing.Point(693, 223);
             this.buttonspdate.Name = "buttonspdate";
-            this.buttonspdate.Size = new System.Drawing.Size(75, 23);
+            this.buttonspdate.Size = new System.Drawing.Size(85, 36);
             this.buttonspdate.TabIndex = 12;
             this.buttonspdate.Text = "sprawdz za ile badanie";
             this.buttonspdate.UseVisualStyleBackColor = true;
+            // 
+            // buttonusun
+            // 
+            this.buttonusun.BackColor = System.Drawing.SystemColors.Info;
+            this.buttonusun.Location = new System.Drawing.Point(594, 287);
+            this.buttonusun.Name = "buttonusun";
+            this.buttonusun.Size = new System.Drawing.Size(75, 32);
+            this.buttonusun.TabIndex = 13;
+            this.buttonusun.Text = "usun";
+            this.buttonusun.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonusun);
             this.Controls.Add(this.buttonspdate);
             this.Controls.Add(this.labelData);
             this.Controls.Add(this.labelBadania);
@@ -221,6 +233,7 @@ namespace zadanie
         private System.Windows.Forms.Label labelBadania;
         private System.Windows.Forms.Label labelData;
         private System.Windows.Forms.Button buttonspdate;
+        private System.Windows.Forms.Button buttonusun;
     }
 }
 

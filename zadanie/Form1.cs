@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,14 +33,11 @@ namespace zadanie
         {
 
         }
-        
-        struct pacjenci
-        {
-            public string imie;
-            public string nazwabadania;
-            public string data;
 
-        }
+        Queue pacjenci = new Queue();
+
+
+        
         
 
         private void Form1_Load(object sender, EventArgs e)
