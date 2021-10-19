@@ -189,6 +189,7 @@ namespace zadanie
             this.buttonusun.TabIndex = 13;
             this.buttonusun.Text = "usun";
             this.buttonusun.UseVisualStyleBackColor = false;
+            this.buttonusun.Click += new System.EventHandler(this.buttonusun_Click);
             // 
             // contextMenuStrip1
             // 

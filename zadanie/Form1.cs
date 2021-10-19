@@ -6,12 +6,27 @@ namespace zadanie
 {
     public partial class Form1 : Form
     {
+        struct pacjenci
+        {
+            string imie;
+            string nazwa_bad;
+            float data_bad;
 
-        string lname, lnBadania;
+        }
+        // queue
+        Queue kolejka = new Queue();
+        // ^ własna próba
+
+
+
+        /*string lname, lnBadania;
         string ldata;
+        */ // do zabawy z button wyślij
+        
 
-       
-       
+
+
+
         public Form1()
         {
             InitializeComponent();
@@ -28,19 +43,12 @@ namespace zadanie
         }
 
 
-        struct pacjenci
-        {
-            string imie;
-            string nazwa_bad;
-            float data_bad;
-
-        }
-        // queue
-        Queue kolejka = new Queue();
         
-            
 
-       //shsfsfafsfs
+       
+
+
+
 
 
 
@@ -67,8 +75,30 @@ namespace zadanie
             ldata = dateTimePicker1.Text;
             MessageBox.Show("Dane: "+lname + " " + lnBadania + " " + ldata + " Zostały dodane"); //wyswietlenie obecnych danych.
             */      //meh
-            
-           
+             void start()
+            {
+
+                // Creates and initializes a new Queue.
+                Queue myQ = new Queue();
+                myQ.Enqueue("Hello");
+                myQ.Enqueue("World");
+                myQ.Enqueue("!");
+
+                // Displays the properties and values of the Queue.
+                Console.WriteLine("myQ");
+                Console.WriteLine("\tCount:    {0}", myQ.Count);
+                Console.Write("\tValues:");
+                PrintValues(myQ);
+            }
+
+            void PrintValues(IEnumerable myCollection)
+            {
+                foreach (Object obj in myCollection)
+                    Console.Write("    {0}", obj);
+                Console.WriteLine();
+            }
+
+
         }
 
         private void buttontxt_Click(object sender, EventArgs e)
@@ -76,11 +106,17 @@ namespace zadanie
             //queue simple export file = "queues.txt";
         }
 
+        private void buttonusun_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             // dateTimePicker.
-          
+
         }
 
     }
 }
+
