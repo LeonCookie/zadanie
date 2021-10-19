@@ -2,20 +2,14 @@
 using System.Collections;
 using System.Windows.Forms;
 
+
+
 namespace zadanie
 {
     public partial class Form1 : Form
     {
-        struct pacjenci
-        {
-            string imie;
-            string nazwa_bad;
-            float data_bad;
-
-        }
-        // queue
-        Queue kolejka = new Queue();
-        // ^ własna próba
+        
+       
 
 
 
@@ -67,6 +61,13 @@ namespace zadanie
             labelTime.Text = DateTime.Now.ToLongTimeString();
             timer1.Start();
         }
+        struct pacjenci
+        {
+            string imie;
+            string nazwa_bad;
+            float data_bad;
+
+        }
 
         private void buttonWyslij_Click(object sender, EventArgs e)
         {
@@ -75,33 +76,20 @@ namespace zadanie
             ldata = dateTimePicker1.Text;
             MessageBox.Show("Dane: "+lname + " " + lnBadania + " " + ldata + " Zostały dodane"); //wyswietlenie obecnych danych.
             */      //meh
-             void start()
+
+            Queue ulomnedzieci = new Queue();
+
+            ulomnedzieci.Enqueue(1);// dodanie elementu do kolejki
+            ulomnedzieci.Enqueue(2);
+            foreach(int i in ulomnedzieci)//wyswietlaelementy kolejki
             {
-
-                // Creates and initializes a new Queue.
-                Queue myQ = new Queue();
-                myQ.Enqueue("Hello");
-                myQ.Enqueue("World");
-                myQ.Enqueue("!");
-
-                // Displays the properties and values of the Queue.
-                Console.WriteLine("myQ");
-                Console.WriteLine("\tCount:    {0}", myQ.Count);
-                Console.Write("\tValues:");
-                PrintValues(myQ);
+                System.Diagnostics.Debug.WriteLine(i);
             }
 
-            void PrintValues(IEnumerable myCollection)
-            {
-                foreach (Object obj in myCollection)
-                    Console.Write("    {0}", obj);
-                Console.WriteLine();
-            }
 
 
         }
-
-        private void buttontxt_Click(object sender, EventArgs e)
+            private void buttontxt_Click(object sender, EventArgs e)
         {
             //queue simple export file = "queues.txt";
         }
