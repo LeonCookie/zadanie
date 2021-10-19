@@ -97,7 +97,7 @@ namespace zadanie
         {
            
                 //Pass the filepath and filename to the StreamWriter Constructor
-                StreamWriter sw = new StreamWriter("E:\\Test.txt");
+                StreamWriter sw = new StreamWriter(@"E:\\Test.txt");
                 //Write a line of text
                 sw.WriteLine("Hello World!!");
                 //Write a second line of text
