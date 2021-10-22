@@ -73,6 +73,8 @@ namespace zadanie
 
         }
 
+        Queue ulomnedzieci = new Queue();
+
         private void buttonWyslij_Click(object sender, EventArgs e)
         {
             /*lname = textBoxImie.Text;     
@@ -81,45 +83,49 @@ namespace zadanie
             MessageBox.Show("Dane: "+lname + " " + lnBadania + " " + ldata + " Zostały dodane"); //wyswietlenie obecnych danych.
             */      //meh
 
-            Queue ulomnedzieci = new Queue();
 
-            ulomnedzieci.Enqueue(1);// dodanie elementu do kolejki
-            ulomnedzieci.Enqueue(2);
-            foreach(int i in ulomnedzieci)//wyswietlaelementy kolejki
-            {
-                System.Diagnostics.Debug.WriteLine(i);
-            }
+
+            ulomnedzieci.Enqueue(textBoxImie.Text);// dodanie elementu do kolejki
+            ulomnedzieci.Enqueue(textBoxNazwaBadania.Text);
+            ulomnedzieci.Enqueue(dateTimePicker1.Text);
+            //wyswietlaelementy kolejki
+            labelImie.Text = textBoxImie.Text;
+            labelBadania.Text = textBoxNazwaBadania.Text;
+            labelData.Text = dateTimePicker1.Text;
+
+
+
 
 
 
         }
         private void buttontxt_Click(object sender, EventArgs e)
         {
-           
-                //Pass the filepath and filename to the StreamWriter Constructor
-                StreamWriter sw = new StreamWriter(@"E:\\Test.txt");
-                //Write a line of text
-                sw.WriteLine("Hello World!!");
-                //Write a second line of text
-                sw.WriteLine("From the StreamWriter class");
-            
-                //Close the file
-                sw.Close();
-                MessageBox.Show("sprawdz swoj dysk E!");
 
+            //Pass the filepath and filename to the StreamWriter Constructor
+            //C:\Users\student\Documents\
+            //Pass the filepath and filename to the StreamWriter Constructor
+            StreamWriter sw = new StreamWriter(@"C:\\Users\student\Desktop\text.txt");
+            //Write a line of text
+            sw.WriteLine("Hello World!!");
+            //Write a second line of text
+            sw.WriteLine("From the StreamWriter class");
 
-
-
-                System.Diagnostics.Debug.WriteLine("Exception: " );
+            //Close the file
+            sw.Close();
+            MessageBox.Show("sprawdz swoj dysk E!");
             
             
-                System.Diagnostics.Debug.WriteLine("Executing finally block.");
+
+
+
+            System.Diagnostics.Debug.WriteLine("przycisk wyslij kliknieto " );
             
         }
 
         private void buttonusun_Click(object sender, EventArgs e)
         {
-
+            System.Diagnostics.Debug.WriteLine("przycisk usun kliknieto " );
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -128,6 +134,20 @@ namespace zadanie
 
         }
 
+        private void buttonp_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("przycisk poprzedni kliknieto ");
+        }
+
+        private void buttonn_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("przycisk nastepny kliknieto ");
+        }
+
+        private void buttonspdate_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("przycisk za ile badanie kliknieto ");
+        }
     }
 }
 

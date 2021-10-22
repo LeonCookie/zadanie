@@ -134,6 +134,7 @@ namespace zadanie
             this.buttonp.TabIndex = 7;
             this.buttonp.Text = "poprzedni";
             this.buttonp.UseVisualStyleBackColor = true;
+            this.buttonp.Click += new System.EventHandler(this.buttonp_Click);
             // 
             // buttonn
             // 
@@ -143,6 +144,7 @@ namespace zadanie
             this.buttonn.TabIndex = 8;
             this.buttonn.Text = "nastepny";
             this.buttonn.UseVisualStyleBackColor = true;
+            this.buttonn.Click += new System.EventHandler(this.buttonn_Click);
             // 
             // labelImie
             // 
@@ -179,6 +181,7 @@ namespace zadanie
             this.buttonspdate.TabIndex = 12;
             this.buttonspdate.Text = "sprawdz za ile badanie";
             this.buttonspdate.UseVisualStyleBackColor = true;
+            this.buttonspdate.Click += new System.EventHandler(this.buttonspdate_Click);
             // 
             // buttonusun
             // 
